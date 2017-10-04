@@ -48,7 +48,7 @@ export default {
     },
     methods: {
         post: function(){
-            this.$http.post('https://nn-vue-playlist.firebaseio.com/posts.json', this.blog).then(function(data){
+            this.$http.post('https://simoncapstone1150.firebaseio.com/posts.json', this.blog).then(function(data){
                 console.log(data);
                 this.submitted = true;
             });
