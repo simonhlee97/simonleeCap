@@ -7,3 +7,4 @@ export default {
         }
     }
 };
+// this mixin contains the search function, using .filter() method
