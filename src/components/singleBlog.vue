@@ -3,7 +3,7 @@
         <h1>{{ blog.title }}</h1>
         <article>{{ blog.content }}</article>
         <p>Author: {{ blog.author }}</p>
-        <p>Categories:</p>
+        <p>Tags:</p>
         <ul>
             <li v-for="category in blog.categories">{{ category }}</li>
         </ul>
@@ -37,7 +37,7 @@ export default {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    background: #404040;
+    background: crimson;
     border: 1px dotted #aaa;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div id="show-blogs">
         <h1>All Stories</h1>
-        <input type="text" v-model="search" placeholder="search blogs" />
+        <input type="text" v-model="search" placeholder="search stories" />
         <div v-for="blog in filteredBlogs" class="single-blog">
             <router-link v-bind:to="'/blog/' + blog.id"><h2>{{ blog.title }}</h2></router-link>
             <article>{{ blog.content }}</article>
@@ -46,10 +46,12 @@ export default {
     padding: 20px;
     margin: 20px 0;
     box-sizing: border-box;
-    background: #eee;
+    background: crimson;
     border: 1px dotted #aaa;
 }
-
+#show-blogs a:hover{
+    color: white;
+}
 #show-blogs a{
     color: black;
     text-decoration: none;

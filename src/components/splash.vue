@@ -5,7 +5,6 @@
 		<p>a CMS for sports fans and bloggers</p>
 	</div>
 
-
 </template>
 
 <script>
@@ -19,6 +18,5 @@ export default{
 	margin: 9em auto;
 	color: white;
 	text-align: center;
-
 }
 </style>

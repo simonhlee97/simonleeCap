@@ -26,8 +26,9 @@ export default {
 </script>
 
 <style>
-body{
+body {
     margin: 0;
+    color: white;
     font-family: Helvetica, Arial, sans-serif;
     background-image: url('./assets/baseball.jpg');
     background-position: center center;
@@ -38,7 +39,4 @@ body{
   /* height: 100%;
   min-height: 100%; */
 }
-
-
-
 </style>
