@@ -1,8 +1,8 @@
 {
-  "name": "vuejs-playlist",
-  "description": "A Vue.js project",
-  "version": "1.0.0",
-  "author": "Shaun",
+  "name": "simoncapstoneproj",
+  "description": "A Vue.js and Firebase project",
+  "version": "1.0.2",
+  "author": "Simon Lee",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
@@ -11,7 +11,8 @@
   "dependencies": {
     "vue": "^2.2.1",
     "vue-resource": "^1.2.1",
-    "vue-router": "^2.3.1"
+    "vue-router": "^2.3.1",
+    "vuetify": "^0.15.7"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

@@ -1,31 +1,37 @@
 <template>
     <div id="add-blog">
-        <h2>Add a New Blog Post</h2>
+        <h2>Post a Sports Story</h2>
         <form v-if="!submitted">
-            <label>Blog Title:</label>
+            <label>Story Title:</label>
             <input type="text" v-model.lazy="blog.title" required />
-            <label>Blog Content:</label>
+            <label>Story Content:</label>
             <textarea v-model.lazy.trim="blog.content"></textarea>
             <div id="checkboxes">
-                <p>Blog Categories:</p>
-                <label>Ninjas</label>
-                <input type="checkbox" value="ninjas" v-model="blog.categories" />
-                <label>Wizards</label>
-                <input type="checkbox" value="wizards" v-model="blog.categories" />
-                <label>Mario</label>
-                <input type="checkbox" value="mario" v-model="blog.categories" />
-                <label>Cheese</label>
-                <input type="checkbox" value="cheese" v-model="blog.categories" />
+                <p>Categories:</p>
+                <label>NCAA Football</label>
+                <input type="checkbox" value="collFootball" v-model="blog.categories" />
+                <label>NCAA Basketball</label>
+                <input type="checkbox" value="collBasketball" v-model="blog.categories" />
+                <label>NBA</label>
+                <input type="checkbox" value="nba" v-model="blog.categories" />
+                <label>MLB</label>
+                <input type="checkbox" value="mlb" v-model="blog.categories" />
+                <label>NFL</label>
+                <input type="checkbox" value="nfl" v-model="blog.categories" />
+                <label>Tennis</label>
+                <input type="checkbox" value="tennis" v-model="blog.categories" />
+                <label>Golf</label>
+                <input type="checkbox" value="golf" v-model="blog.categories" />
             </div>
             <label>Author:</label>
             <select v-model="blog.author">
                 <option v-for="author in authors">{{ author }}</option>
             </select>
             <hr />
-            <button v-on:click.prevent="post">Add Blog</button>
+            <button v-on:click.prevent="post">Publish</button>
         </form>
         <div v-if="submitted">
-            <h3>Thanks for adding your post</h3>
+            <h3>Congrats! Your story has been published.</h3>
         </div>
     </div>
 </template>
@@ -42,7 +48,7 @@ export default {
                 categories: [],
                 author: ''
             },
-            authors: ['The Net Ninja', 'The Angular Avenger', 'The Vue Vindicator'],
+            authors: ['Simon', 'John Walker', 'Rex Do', 'Dr Evil', 'Homer Simpson'],
             submitted: false
         }
     },
@@ -63,7 +69,7 @@ export default {
 }
 #add-blog{
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
 }
 label{

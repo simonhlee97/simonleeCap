@@ -28,6 +28,17 @@ export default {
 <style>
 body{
     margin: 0;
-    font-family: 'Nunito SemiBold';
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('./assets/baseball.jpg');
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  /* height: 100%;
+  min-height: 100%; */
 }
+
+
+
 </style>
